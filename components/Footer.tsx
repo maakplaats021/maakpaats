@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const Footer: React.FC = () => {
@@ -25,7 +24,7 @@ const Footer: React.FC = () => {
             </ul>
           </div>
           <div>
-            <h4 className="font-bold text-[12px] mb-6 uppercase tracking-widest text-gray-500">Over de Club</h4>
+            <h4 className="font-bold text-[12px] mb-6 uppercase tracking-widest text-gray-500">Over de BOBA Club</h4>
             <ul className="space-y-3 text-[14px]">
               <li><a href="#" className="hover:text-oba-red">Onze missie</a></li>
               <li><a href="#" className="hover:text-oba-red">Samenwerken</a></li>
@@ -47,6 +46,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-[11px] text-gray-500">© 2024 BBQ & Olijfolie Inspiratie Club</p>
           <div className="flex gap-8 text-[11px] text-gray-500">
+            {/* Fixed 'class' to 'className' */}
             <a href="#" className="hover:text-white">Toegankelijkheid</a>
             <a href="#" className="hover:text-white">Privacy statement</a>
             <a href="#" className="hover:text-white">Disclaimer</a>

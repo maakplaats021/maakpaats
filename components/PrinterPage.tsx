@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Printer } from '../types';
 
@@ -7,7 +6,7 @@ const printers: Printer[] = [
     id: 'prusa-mini',
     name: 'Prusa Mini+',
     type: 'FDM Desktop Printer',
-    locations: ['OBA Oosterdok', 'OBA Roelof Hartplein', 'OBA Bijlmer'],
+    locations: ['BOBA Oosterdok', 'BOBA Roelof Hartplein', 'BOBA Bijlmer'],
     description: 'Een compacte maar krachtige printer, ideaal voor beginners en snelle prototypes.',
     imageUrl: 'https://images.unsplash.com/photo-1631215170366-224859f518e3?auto=format&fit=crop&q=80&w=400',
     features: ['Automatische mesh bed leveling', 'Bowden-extrusie', '3.2" kleurenscherm']
@@ -16,7 +15,7 @@ const printers: Printer[] = [
     id: 'ultimaker-s5',
     name: 'Ultimaker S5',
     type: 'Dual Extrusion Pro',
-    locations: ['OBA Oosterdok', 'OBA Mercatorplein'],
+    locations: ['BOBA Oosterdok', 'BOBA Mercatorplein'],
     description: 'De standaard voor professioneel 3D-printen. Geschikt voor grote objecten en complexe geometrieën met oplosbaar steunmateriaal.',
     imageUrl: 'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=400',
     features: ['Groot bouwvolume', 'Dual extrusion', 'Luchtfilter-integratie']
@@ -25,7 +24,7 @@ const printers: Printer[] = [
     id: 'formlabs-resin',
     name: 'Formlabs Form 3+',
     type: 'SLA Resin Printer',
-    locations: ['OBA Oosterdok'],
+    locations: ['BOBA Oosterdok'],
     description: 'Voor modellen met extreem hoge resolutie en gladde oppervlakken. Perfect voor sieraden, miniaturen of medische modellen.',
     imageUrl: 'https://images.unsplash.com/photo-1638274718029-79f64c664360?auto=format&fit=crop&q=80&w=400',
     features: ['LFS (Low Force Stereolithography)', 'Hoge precisie', 'Gladde afwerking']
@@ -34,7 +33,7 @@ const printers: Printer[] = [
     id: 'bambu-lab-x1',
     name: 'Bambu Lab X1 Carbon',
     type: 'High Speed FDM',
-    locations: ['OBA Slotermeer', 'OBA Javaplein'],
+    locations: ['BOBA Slotermeer', 'BOBA Javaplein'],
     description: 'Supersnel printen met AI-ondersteuning. Kan materialen aan zoals carbon fiber en nylon.',
     imageUrl: 'https://images.unsplash.com/photo-1614036417651-efe5912149d8?auto=format&fit=crop&q=80&w=400',
     features: ['AI-camera inspectie', 'Multi-color printing', 'Lidar bed leveling']
@@ -62,7 +61,7 @@ const PrinterPage: React.FC<PrinterPageProps> = ({ onBack }) => {
         <h1 className="text-5xl font-black mb-4">3D-lab: Onze Printers</h1>
         <p className="text-xl text-gray-600 max-w-3xl">
           In onze Maakplaatsen kun je aan de slag met de nieuwste technologieën. 
-          Hieronder vind je een overzicht van de 3D-printers die beschikbaar zijn op verschillende OBA locaties.
+          Hieronder vind je een overzicht van de 3D-printers die beschikbaar zijn op verschillende BOBA locaties.
         </p>
       </div>
 
@@ -77,6 +76,7 @@ const PrinterPage: React.FC<PrinterPageProps> = ({ onBack }) => {
             Een <span className="text-oba-red italic">cadeau</span> voor elke maker!
           </h2>
           <p className="mt-4 font-black text-black text-lg leading-snug">
+            {/* Fixed 'class' to 'className' on span tags below */}
             Bij <span className="underline decoration-oba-red decoration-4">ieder gebruik</span> van de 3D-printers in onze Maakplaats ontvang je een <span className="bg-white px-2">VVV cadeaubon van € 40,-</span> én een fles van onze <span className="bg-white px-2">exclusieve olijfolie</span>.
           </p>
         </div>

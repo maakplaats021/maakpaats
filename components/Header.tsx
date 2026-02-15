@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 interface HeaderProps {
@@ -15,7 +14,7 @@ const Header: React.FC<HeaderProps> = ({ onLogoClick }) => {
             className="flex items-center gap-1 cursor-pointer"
             onClick={onLogoClick}
           >
-            <div className="bg-oba-red text-white font-black text-2xl px-2 py-0.5 rounded leading-none italic">oba</div>
+            <div className="bg-oba-red text-white font-black text-2xl px-2 py-0.5 rounded leading-none italic">boba</div>
           </div>
 
           {/* Navigation */}
